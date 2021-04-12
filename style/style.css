@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* Reset */
+* {
+    color: #087438;   /* 주조색 */
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul            {    list-style: none;    }
+a             {    text-decoration: none;    }
+a:link       {    color: #222;    }
+a:visited   {    color: #222;    }
+a:hover    {    color: #222;    }
+a:active    {    color: #222;    }
+/* Reset */
+
+/* 가이드라인 */
+div#wrap {border: 1px solid #000;}
+/*div#slideMain {border: 2px solid #f80;}
+div#shuttleFrame {border: 2px solid #08f;}*/
+table {border: 1px solid #aaa;}
+/*td {border: 1px solid #000;}*/
+/* 가이드라인 */
+
+
+
+/* div#wrap */
+div#wrap {
+    width: 1380px;
+    margin: 0 auto;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+#wrap .btnArrow img {
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* div#wrap */
+
+
+
+
+/* 메인 슬라이드쇼 시작 */
+div#slideMain {
+    width: 1240px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#slideMain div#shuttleFrame {
+    width: 1550px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+#slideMain div#shuttleFrame table {
+    width: 270px;
+    height: 200px;
+    border-collapse: collapse;
+    margin: 18px;
+    flex: 1;
+}
+#slideMain div#shuttleFrame table  tr:nth-child(2) td{
+    padding: 16px 18px;
+}
+#slideMain div#shuttleFrame table h4 {
+    font-size: 18px;
+    height: 40px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+    line-height: 40px;
+    display: inline-block;
+}
+#slideMain div#shuttleFrame table h4+img {
+    margin-bottom: 5px;
+    position: relative;
+    top: 10px;
+}
+#slideMain div#shuttleFrame table address {
+    height: 50px;
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 6px;
+}
+#slideMain div#shuttleFrame table hr {
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+#slideMain div#shuttleFrame table ul li {
+    color: #000;
+    font-size: 14px;
+}
+#slideMain div#shuttleFrame table ul li::before {
+    content: "\2022 \0020 이용문의 : ";
+    font-size: 14px;
+}
+/* 메인 슬라이드쇼 끝 */
